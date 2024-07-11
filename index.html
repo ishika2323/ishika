@@ -1,11 +1,104 @@
-<!DOCKTYPE htlm>
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-     <title> </title>
-      </head>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    <body>
-        <h1>Demo Webpage</h1>
-    </body>
+/* Style the header */
+header {
+  background-color: #ADD8E6;
+  padding: 10px;
+  text-align: left;
+  font-size: 25px;
+  color:black;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30px;
+  height: 300px; /* only for demonstration, should be removed */
+  background: 
+  padding:10px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding:60;
+}
+
+article {
+  float: right;
+  padding: 30px;
+  width: 80%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #ADD8E6;
+  padding: 10px;
+  text-align: center;
+  color: black
+  ;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Layout Float</h2>
+<p>.</p>
+<p>Resize the browser window to see the responsive effect (you will learn more about this in our next chapter - HTML Responsive.)</p>
+
+<header>
+  <h2>Ishika Bhelke</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">College</a></li>
+      <li><a href="#">Sports</a></li>
+     
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>College Information
+    <p>MIT World Peace University (MIT-WPU) is a prestigious world-class institution of higher education in India, boasting a remarkable 40-year legacy dedicated to fostering excellence in academics. With a global alumni network comprising over 1,00,000 professionals, MIT-WPU has consistently delivered outstanding educational outcomes. The institution offers over 150 undergraduate and postgraduate programmes that are thoughtfully designed to strike a balance between theoretical foundations and practical application. The pedagogical approach prioritises experiential learning, empowering students to translate knowledge into real-world skills. This is facilitated through immersive internships and invaluable mentor-mentee insights that serve as catalysts for personal and professional growth</p>
+  
+  </article>
+</section>
+
+<footer>
+  <p>Footer</p>
+</footer>
+
+</body>
 </html>
