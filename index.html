@@ -1,38 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="/style.css">
-<title>Assignmet</title>
+<title>Student Portfolio - Ishika Bhelke</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">"
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa; /* Light background for contrast */
+  color: #333; /* Dark gray for text for better readability */
+}
+
+/* Style the header */
+header {
+  background-color: #004d40; /* Deep teal */
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that float next to each other */
+nav {
+  float: left;
+  width: 25%;
+  background: #263238; /* Dark gray-blue */
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff; /* White text for readability */
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  background-color: #00796b; /* Medium teal */
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #004d40; /* Deep teal */
+}
+
+/* Style the main content area */
+article {
+  float: left;
+  padding: 20px;
+  width: 75%;
+  background-color: #ffffff; /* White background for content area */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #004d40; /* Deep teal */
+  padding: 10px;
+  text-align: center;
+  color: white;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Add some styling for form elements */
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"], 
+form input[type="email"], 
+form textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"], 
+form input[type="reset"] {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+form input[type="submit"] {
+  background-color: #00796b; /* Medium teal */
+  color: white;
+}
+
+form input[type="reset"] {
+  background-color: #d32f2f; /* Red for reset button */
+  color: white;
+}
+
+/* Style links */
+a {
+  color: #00796b; /* Medium teal for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+</style>
 </head>
 <body>
 
-<h2>Portfolio</h2>
-
-
 <header>
-  <h2>Ishika Bhelke</h2>
+  <h2>Student Portfolio</h2>
 </header>
 
 <section>
   <nav>
     <ul>
-      <li><a href="#">College</a></li>
-      <li><a href="#">Sports</a></li>
-     
+      <li><a href="#about-me">About Me</a></li>
+      <li><a href="#achievements">My Achievements</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   
   <article>
-    <h1>College Information
-    <p>MIT World Peace University (MIT-WPU) is a prestigious world-class institution of higher education in India, boasting a remarkable 40-year legacy dedicated to fostering excellence in academics. With a global alumni network comprising over 1,00,000 professionals, MIT-WPU has consistently delivered outstanding educational outcomes. The institution offers over 150 undergraduate and postgraduate programmes that are thoughtfully designed to strike a balance between theoretical foundations and practical application. The pedagogical approach prioritises experiential learning, empowering students to translate knowledge into real-world skills. This is facilitated through immersive internships and invaluable mentor-mentee insights that serve as catalysts for personal and professional growth</p>
-  
+    <h1 id="about-me">About Me</h1>
+    <p>Hello, I'm Ishika Bhelke, currently studying at MIT World Peace University, pursuing a B.Tech in Computer Science and Engineering. I am passionate about technology and innovation, constantly seeking opportunities to learn and grow in the field of computer science.</p>
+    <img src="ishikagu.jpg" alt="Ishika Bhelke" style="width:200px;height:auto; border-radius:50%; margin-top: 20px;">
+    
+    <h1 id="achievements">My Achievements</h1>
+    <ul>
+      <li>Dean's List 2021 - Recognized for academic excellence</li>
+      <li>Winner of Coding Hackathon 2022 - Developed a mobile app for disaster management</li>
+      <li>Member of University Robotics Club - Participated in national level competitions</li>
+      <li>Published Research Paper on Machine Learning - Presented at XYZ Conference 2023</li>
+    </ul>
+    
+    <h1 id="skills">Skills</h1>
+    <table border="1" style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+      <tr>
+        <th>Skill</th>
+        <th>Proficiency</th>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Advanced</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Intermediate</td>
+      </tr>
+      <tr>
+        <td>HTML/CSS</td>
+        <td>Advanced</td>
+      </tr>
+      <tr>
+        <td>Machine Learning</td>
+        <td>Intermediate</td>
+      </tr>
+      <tr>
+        <td>Data Analysis</td>
+        <td>Advanced</td>
+      </tr>
+    </table>
+    
+    <h1 id="projects">Projects</h1>
+    <ul>
+      <li><strong>Disaster Management App:</strong> A mobile application to assist during natural disasters by providing real-time information and resources.</li>
+      <li><strong>Robotics Automation:</strong> Developed an automated robotic system for industrial applications using Arduino and Python.</li>
+      <li><strong>Machine Learning Model:</strong> Created a predictive model for analyzing customer data using Python and scikit-learn.</li>
+    </ul>
+    
+    <h1 id="contact">Contact</h1>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4"></textarea><br>
+      <input type="submit" value="Send">
+      <input type="reset" value="Reset">
+    </form>
+    
+    <p>For more information, visit my <a href="https://example.com" target="_blank">website</a>.</p>
   </article>
 </section>
 
 <footer>
-  <p>Footer</p>
+  <p>&copy; 2024 Ishika Bhelke - All rights reserved</p>
 </footer>
 
 </body>
